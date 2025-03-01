@@ -1,0 +1,9 @@
+Flask
+langchain
+torch
+sentence_transformers
+faiss-cpu
+huggingface-hub
+pypdf
+llama-cpp-python
+accelerate

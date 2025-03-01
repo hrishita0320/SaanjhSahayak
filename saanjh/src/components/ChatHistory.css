@@ -1,0 +1,26 @@
+/* src/components/ChatHistory.css */
+
+.chat-history {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .user-message {
+    text-align: right;
+    background-color: #e0e0e0;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .bot-message {
+    text-align: left;
+    background-color: #f0f0f0;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

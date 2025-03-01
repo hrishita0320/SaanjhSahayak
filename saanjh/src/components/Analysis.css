@@ -1,0 +1,166 @@
+/* Analysis.module.css */
+
+.container {
+    background: linear-gradient(to bottom right, #ebf8ff, #c3dafe);
+    min-height: 100vh;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .card {
+    margin-top: 7rem;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 2px solid #c3dafe;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    background: linear-gradient(to right, #3182ce, #5a67d8);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: pulse 1s infinite;
+  }
+  
+  .content {
+    padding: 2rem;
+  }
+  
+  .content div {
+    margin-bottom: 2rem;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .flex div {
+    flex: 1 1 calc(50% - 1rem);
+  }
+  
+  .flex div.full {
+    flex: 1 1 100%;
+  }
+  
+  .bg-summary {
+    background: linear-gradient(to right, #ebf8ff, #c3dafe);
+    padding: 1.5rem;
+    border: 2px solid #bee3f8;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bg-specialist,
+  .bg-precautions,
+  .bg-diseases,
+  .bg-doctors-note {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid;
+  }
+  
+  .bg-specialist {
+    background: linear-gradient(to right, #f0fff4, #e6fffa);
+    border-color: #c6f6d5;
+  }
+  
+  .bg-precautions {
+    background: linear-gradient(to right, #fffff0, #feebc8);
+    border-color: #fefcbf;
+  }
+  
+  .bg-diseases {
+    background: linear-gradient(to right, #fff5f5, #fed7d7);
+    border-color: #feb2b2;
+  }
+  
+  .bg-doctors-note {
+    background: linear-gradient(to right, #faf5ff, #e9d8fd);
+    border-color: #d6bcfa;
+    font-style: italic;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button.download {
+    background: linear-gradient(to right, #3182ce, #5a67d8);
+  }
+  
+  button.view {
+    background: linear-gradient(to right, #5a67d8, #9f7aea);
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 5rem 0;
+  }
+  
+  .loading .spinner {
+    animation: spin 1s linear infinite;
+    border: 0.25rem solid #ebf8ff;
+    border-top-color: #3182ce;
+    border-radius: 9999px;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

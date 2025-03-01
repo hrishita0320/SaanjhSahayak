@@ -1,0 +1,28 @@
+/* src/components/Chatbot.css */
+
+.chatbot {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .upload-section {
+    margin-bottom: 20px;
+  }
+  
+  .input-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .input-section input {
+    width: 80%;
+    padding: 10px;
+  }
+  
+  .input-section button {
+    width: 15%;
+    padding: 10px;
+  }
+  

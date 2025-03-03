@@ -8,7 +8,7 @@ const axios = require('axios');
 const mongoose = require('mongoose');
 const Grid = require('gridfs-stream');
 const { analysis } = require('./LLM');
-const mongoURI = "mongodb+srv://keerthikakishore49:Keerthika...123@cluster0.5v08c8r.mongodb.net/saanjh";
+const mongoURI = process.env.DBURI;
 const databaseName = 'saanjh';
 let corspolicy = {
     origin : "http://localhost:3000",
@@ -87,7 +87,7 @@ const upload = multer({ storage: storage });
 const pdfid = async (req, res) => {
     
     try {
-        const conn = mongoose.createConnection("mongodb+srv://keerthikakishore49:Keerthika...123@cluster0.5v08c8r.mongodb.net/saanjh");
+        const conn = mongoose.createConnection(mongoURI);
         let gfs;
         conn.once('open', () => {
             gfs = new mongoose.mongo.GridFSBucket(conn.db, {

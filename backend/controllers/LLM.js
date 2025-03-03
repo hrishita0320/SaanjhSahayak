@@ -471,7 +471,7 @@ const analysis = async (req, res) => {
 
 
 }
-const apiKey = "AIzaSyAsP6FIwHahsY4ShpkIDu-Vl08DAuKeJRA";  // Replace with your actual API key
+const apiKey = process.env.API_KEY;  // Replace with your actual API key
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
